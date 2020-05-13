@@ -15,6 +15,9 @@ public class Main {
 
         try {
 
+            Book book = new Book("Harry Potter","Darwin","J K Rowling",899);
+            session.save(book);
+
 
             LoginUser loginFrame = new LoginUser();
             loginFrame.setSize(600, 300);

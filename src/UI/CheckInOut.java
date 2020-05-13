@@ -261,6 +261,8 @@ public class CheckInOut extends JDialog {
         String statusSelected=(String) status.getSelectedItem();
         CheckIn checkIn;
         CheckOut checkOut;
+        Object [] row1=new Object[5];
+        DefaultTableModel defaultTableModel1=(DefaultTableModel)table2.getModel();
         if(statusSelected.equals("Check In")){
            checkIn =new CheckIn(book1,client1,new Date());
             session.save(checkIn);
@@ -270,6 +272,13 @@ public class CheckInOut extends JDialog {
             checkOut = new CheckOut(book1, client1, new Date());
             session.save(checkOut);
             row[4]="Check Out";
+            row1[4]="Check Out";
+            row1[0]=client1.getRegNo();
+            row1[1]=client1.getFirstName();
+            row1[2]=book1.getTitle();
+            row1[3]=new Date();
+            defaultTableModel1.addRow(row1);
+
         }
         row[0]=client1.getRegNo();
         row[1]=client1.getFirstName();
