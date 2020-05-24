@@ -27,6 +27,18 @@ The application allow users to do the following:
 6.export check outs in pdf and excel
 7.search for a book name in check ins and check outs list
 
+##  Steps to follow
+
+1. Clone the project
+2. Open it in IntelliJ IDEA
+3. Create database called library21696
+4. Run main class located in hibernate folder
+5. login using the credentials (email:wilcarrelle@gmail.com and password:123456)
+6. You can add,edit or delete a book
+7. add clients and search for a book
+8. View all entries and exits
+9. Export list to pdf or excel
+
 ## Technologies Used
 
 * Java
